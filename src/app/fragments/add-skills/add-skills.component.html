@@ -1,0 +1,71 @@
+<div class="table">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <table class="table table-sm table-bordered">
+      <tbody>
+        <tr>
+          <td class="label">
+            <label><b><small>Employee</small></b></label>
+          </td>
+          <td><small>Prem kumar</small></td>
+        </tr>
+        <tr>
+          <td class="">
+            <label><b><small>Practice</small></b></label>
+          </td>
+          <td>
+            <select name="practice" [(ngModel)]="skills.practiceId" (ngModelChange)="onPracticeChange($event)"
+              class="form-select">
+              <option value="">-- Select Practice --</option>
+              <option *ngFor="let item of skillsGroup" [value]="item.id">{{item.name}}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label><b><small>Category</small></b></label>
+          </td>
+          <td>
+            <select name="category" [(ngModel)]="skills.categoryId" (ngModelChange)="onCategoryChange($event)"
+              class="form-select">
+              <option value="">-- Select Category --</option>
+              <option *ngFor="let item of categories" [value]="item.id">{{item.name}}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            <label><b><small>Tech Stack</small></b></label>
+          </td>
+          <td>
+            <div class="table">
+              <table class="table table-sm table-bordered">
+                <tbody>
+                  <tr *ngFor="let item of skills.techStacks; let i = index">
+                    <td>
+                      <input type="checkbox" id="techName{{i}}" [value]="item.name" name="techName{{i}}"
+                        (change)="onSkillSelect(item)" [(ngModel)]="item.checked" required>
+                      <label style="width: 100px" class="ms-2" for="techName{{i}}">{{item.name}}</label>
+                      <div class="form-check form-check-inline ms-4"
+                        *ngFor="let level of ['Beginner', 'Intermediate', 'Proficient', 'Expert']">
+                        <input type="radio" id="{{'techLevel'+i+level}}" name="{{'techLevel'+i}}"
+                          [(ngModel)]="item.level" [value]="level" [disabled]="!item.checked" required>
+                        <label class="ms-2" for="{{'techLevel'+i+level}}">{{level}}</label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class=" d-flex justify-content-end">
+      <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+      <button class="btn btn-secondary btn-sm ms-2" type="reset" (click)="onCancel()">Cancel</button>
+    </div>
+    <div class="spinner" *ngIf="spinner">
+      <img class="spinner" src="\assets\loading.gif">
+    </div>
+  </form>
+</div>

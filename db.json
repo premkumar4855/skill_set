@@ -1,0 +1,186 @@
+{
+  "skillsGroup": [
+    {
+      "id": 1,
+      "name": "App Dev"
+    },
+    {
+      "id": 2,
+      "name": "QA"
+    },
+    {
+      "id": 3,
+      "name": "UI/UX"
+    }
+  ],
+  "categorys": [
+    {
+      "id": "1",
+      "name": "Web Development",
+      "skillsGroupId": 1
+    },
+    {
+      "id": "2",
+      "name": "Database",
+      "skillsGroupId": 1
+    },
+    {
+      "id": "3",
+      "name": "Manual Testing",
+      "skillsGroupId": 2
+    },
+    {
+      "id": 4,
+      "name": "Design",
+      "skillsGroupId": 3
+    }
+  ],
+  "techStacks": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "level": "",
+      "categoryId": 1,
+      "categoryName": "Web Development",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 2,
+      "name": "Bootstrap",
+      "level": "",
+      "categoryId": 1,
+      "categoryName": "Web Development",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 3,
+      "name": "Css",
+      "level": "",
+      "categoryId": 1,
+      "categoryName": "Web Development",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 4,
+      "name": "Html",
+      "level": "",
+      "categoryId": 1,
+      "categoryName": "Web Development",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 5,
+      "name": "MSSQL",
+      "level": "",
+      "categoryId": 2,
+      "categoryName": "Database",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 6,
+      "name": "MYSQL",
+      "level": "",
+      "categoryId": 2,
+      "categoryName": "Database",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 7,
+      "name": "ORACLE",
+      "level": "",
+      "categoryId": 2,
+      "categoryName": "Database",
+      "SkillGroupName": "App Dev"
+    },
+    {
+      "id": 8,
+      "name": "API testing",
+      "level": "",
+      "categoryId": 3,
+      "categoryName": "Manual Testing",
+      "SkillGroupName": "QA"
+    },
+    {
+      "id": 9,
+      "name": "Database testing",
+      "level": "",
+      "categoryId": 3,
+      "categoryName": "Manual Testing",
+      "SkillGroupName": "QA"
+    },
+    {
+      "id": 10,
+      "name": "ETL testing",
+      "level": "",
+      "categoryId": 3,
+      "categoryName": "Manual Testing",
+      "SkillGroupName": "QA"
+    },
+    {
+      "id": 11,
+      "name": "Figma",
+      "level": "",
+      "categoryId": 4,
+      "categoryName": "Design",
+      "SkillGroupName": "UI/UX"
+    },
+    {
+      "id": 12,
+      "name": "Branding",
+      "level": "",
+      "categoryId": 4,
+      "categoryName": "Design",
+      "SkillGroupName": "UI/UX"
+    },
+    {
+      "id": 13,
+      "name": "Sketch",
+      "level": "",
+      "categoryId": 4,
+      "categoryName": "Design",
+      "SkillGroupName": "UI/UX"
+    },
+    {
+      "id": 14,
+      "name": "Css",
+      "level": "",
+      "categoryId": 4,
+      "categoryName": "Design",
+      "SkillGroupName": "UI/UX"
+    }
+  ],
+  "skills": [
+    {
+      "practiceId": "1",
+      "categoryId": "2",
+      "techStacks": [
+        {
+          "id": 5,
+          "name": "MSSQL",
+          "level": "Beginner",
+          "categoryId": 2,
+          "categoryName": "Database",
+          "SkillGroupName": "App Dev",
+          "checked": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "practiceId": "1",
+      "categoryId": "1",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "Angular",
+          "level": "Expert",
+          "categoryId": 1,
+          "categoryName": "Web Development",
+          "SkillGroupName": "App Dev",
+          "checked": true
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

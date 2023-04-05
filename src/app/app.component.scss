@@ -1,0 +1,26 @@
+.search {
+  width: 20%;
+  margin-right: 2rem;
+  height: 30px;
+}
+
+.btn {
+  background-color: #124b8b;
+  border: 0 solid #dedede;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  height: fit-content;
+}
+
+.card {
+  box-shadow: 0 15px 20px #817c7c33;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
