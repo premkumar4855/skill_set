@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
@@ -19,7 +20,6 @@ export class AddSkillsComponent implements OnInit {
     categoryId: '',
     techStacks: []
   };
-
   public spinner: boolean = false;
   public skillsGroup: Array<SkillGroupModel>;
   public categories: Array<CategoryModel>;
@@ -33,7 +33,6 @@ export class AddSkillsComponent implements OnInit {
   ) {
 
   }
-
   //Fetch the SkillGroup Details to select practice.
   ngOnInit(): void {
     this.skillService.getSkillGroupDetails().subscribe((response: any) => {
