@@ -1,5 +1,15 @@
 # SkillSet
 
+Preview Images
+
+<img width="958" alt="screenshot_1" src="https://github.com/user-attachments/assets/561669ea-ecc8-453a-b06b-2e33ef8322e6">
+
+<img width="955" alt="screenshot_2" src="https://github.com/user-attachments/assets/0b597353-de0e-449a-8fbe-653ccbfb86f8">
+
+<img width="959" alt="screenshot_3" src="https://github.com/user-attachments/assets/77e14241-ef3d-417f-ac47-b1b1ed774604">
+
+<img width="951" alt="json_server_setup" src="https://github.com/user-attachments/assets/ad0679ef-88dd-4949-8fb0-5bfef6162324">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
